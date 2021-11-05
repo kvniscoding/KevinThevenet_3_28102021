@@ -1,0 +1,9 @@
+Commit 1 - 05.11.21
+	Création d'un dossier HTML et déplacements des .html dans ce dossier
+	Ajout <meta>: author="" et description=""
+	Remplacement de <h2> par des <p> (non nécessaires car pas utiles pour le référencement)
+	Ajout d'un coeur pour la commande (pour plus tard: coeur vide, coeur plein)
+	Zone cliquable sur les présentations des restaurants: sur la photo plutôt que sur la <figure>
+	Section recherche d'adresse dans un form
+	Ancre vers les restaurants dans un button
+	Soulignement sous les h2 des menu individuels géré avec une div
