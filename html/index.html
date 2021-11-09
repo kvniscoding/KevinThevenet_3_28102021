@@ -2,11 +2,11 @@
 <html lang="fr-FR">
     <head>
         <meta charset="UTF-8" />
-        <mete name="description" content="Site de commande et réservation de restaurants Ohmyfood" />
+        <meta name="description" content="Site de commande et réservation de restaurants Ohmyfood" />
         <meta name="author" content="Kevin Thevenet" />
         <title>Ohmyfood! Paris</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styleIndex.css" />
+        <link rel="stylesheet" href="../public/css/index.css" />
         <!-- Font Google Shrikhand -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,14 +42,16 @@
                         </form>
                         <p>Réservez le menu qui<br />vous convient</p>
                         <p>Découvrez des restaurants d'exception,<br />sélectionnés par nos soins.</p>
-                        <button class="prez-site__exploration" type="button"> <!-- div ancre vers la liste des restaurants -->
-                            <a href="#listeRestaurant">Explorez nos restaurants</a>
-                        </button>
+                        <div class="prez-site__ancre-restau">
+                            <a href="#ancre-restaurants">
+                                Explorez nos restaurants
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="fonct-site">
+                    <div class="fonctionnement-site">
                         <p>Fonctionnement</p>
-                        <div class="fonct-container"> <!-- div étapes du fonctionnement du site -->
+                        <div class="fonctionnement-container"> <!-- div étapes du fonctionnement du site -->
                             <div class="etape-commande">
                                 <div class="num-etape">
                                     <p>1</p>
@@ -82,13 +84,13 @@
                 </section>
 
                 <!-- Section restaurants -->
-                <section id="liste-resto">
+                <section id="ancre-restaurants" class="liste-restaurants">
                     <h2>Restaurants</h2>
-                    <figure class="info-resto info-resto--nouveau">
+                    <figure class="info-restaurant info-restaurant--nouveau">
                         <a href="menu_la_palette_du_gout.html">
-                            <img class="info-resto__photo" src="../images/la_palette_du_gout.jpg" alt="Restaurant La palette du goût" />
+                            <img class="info-restaurant__photo" src="../images/la_palette_du_gout.jpg" alt="Restaurant La palette du goût" />
                         </a>
-                            <div class="nouveau-resto">
+                            <div class="nouveau-restaurant">
                                 <p>Nouveau</p>
                             </div>
                             <figcaption>
@@ -101,11 +103,11 @@
                             </figcaption>
                     </figure>
                     
-                    <figure class="info-resto info-resto--nouveau">
+                    <figure class="info-restaurant info-restaurant--nouveau">
                         <a href="menu_la_note_enchantee.html">
-                            <img class="info-resto__photo" src="../images/la_note_enchantee.jpg" alt="Restaurant La note enchantée" />
+                            <img class="info-restaurant__photo" src="../images/la_note_enchantee.jpg" alt="Restaurant La note enchantée" />
                         </a>
-                        <div class="nouveau-resto">
+                        <div class="nouveau-restaurant">
                             <p>Nouveau</p>
                         </div>
                         <figcaption>
@@ -118,11 +120,11 @@
                         </figcaption>
                     </figure>
 
-                    <figure class="info-resto">
+                    <figure class="info-restaurant">
                         <a href="menu_a_la_francaise.html">
-                            <img class="info-resto__photo" src="../images/a_la_francaise.jpg" alt="Restaurant À la française" />
+                            <img class="info-restaurant__photo" src="../images/a_la_francaise.jpg" alt="Restaurant À la française" />
                         </a>
-                            <div class="nouveau-resto">
+                            <div class="nouveau-restaurant">
                                 <p>Nouveau</p>
                             </div>
                             <figcaption>
@@ -135,11 +137,11 @@
                             </figcaption>
                     </figure>
 
-                    <figure class="info-resto">
+                    <figure class="info-restaurant">
                         <a href="menu_le_delice_des_sens.html">
-                            <img class="info-resto__photo" src="../images/le_delice_des_sens.jpg" alt="Restaurant Le délice des sens" />
+                            <img class="info-restaurant__photo" src="../images/le_delice_des_sens.jpg" alt="Restaurant Le délice des sens" />
                         </a>
-                        <div class="nouveau-resto">
+                        <div class="nouveau-restaurant">
                             <p>Nouveau</p>
                         </div>
                         <figcaption>
@@ -157,10 +159,10 @@
             <footer>
                 <h1>ohmyfood</h1>
                 <ul class="footer__contact">
-                    <li><div class ="footer__picto-contact"><i class="fas fa-utensils"></i></div><a href="#">Proposer un restaurant</a></li>
-                    <li><div class="footer__picto-contact"><i class="fas fa-hands-helping"></i></div><a href="#">Devenir partenaire</a></li>
+                    <li><div class ="footer__picto-contact"><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></div></li>
+                    <li><div class="footer__picto-contact"><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></div></li>
                     <li><a href="#">Mentions légales</a></li>
-                    <li><a href="mailto:ohmyfood@openclassrooms.com">Contact</a></li>
+                    <li><a href="mailto:ohmyfood@example.com">Contact</a></li>
                 </ul>
             </footer>
         </div>
