@@ -7,115 +7,112 @@
     </head>
 
     <body>
-        <div id="blockPage">
+        <div id="page-container">
             <header>
-                <div>
-                    <div id="retourAccueil">
+                <div class="header__heading">
+                    <div class="header--retour-index">
                         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
                     </div>
-                    <img src="images/logo_ohmyfood.png" alt="Logo Ohmyfood" />
+                    <img class="header__logo" src="images/logo_ohmyfood.png" alt="Logo Ohmyfood" />
                 </div>
             </header>
 
             <main>
-                <img src="images/le_delice_des_sens.jpg" alt="Restaurant Le délice des sens" />
-                <section> <!-- Menu -->
-                    <div id="nomRestaurant">
+                <img class="main__photo-resto" src="images/le_delice_des_sens.jpg" alt="Restaurant Le délice des sens" />
+                <section class="menu"> <!-- Menu -->
+                    <div class="nom-resto">
                         <h1>Le délice des sens</h1>
-                        <div class="pictoCoeur">
-                            <i class="far fa-heart"></i>
+                        <div class="div__coeur">
+                            <i class="far fa-heart coeurvide"></i>
+                            <i class="far fa-heart coeurvide coeurplein"></i>
                         </div>
                     </div>
 
                     <!-- Entrées -->
                     <h2>ENTRÉES</h2>
-                    <div id="underline"></div>
-                    <div class="listePlats"></div>
-                        <div class="descriptionPlat">
+                    <div class="underline-titre"></div>
+                    <div class="menu">
+                        <div class="desc-plat">
                             <h3>Tartare de thon</h3>
                             <p>Assaisonné au yuzu</p>
-                            <p class="prixPlat">25€</p>
+                            <p class="desc-plat__tarif">25€</p>
                         </div>               
                         
-                        <div class="descriptionPlat">
+                        <div class="desc-plat">
                             <h3>Bouchée de homard croustillant</h3>
                             <p>Et sa farandole de petits légumes</p>
-                            <p class="prixPlat">35€</p>
+                            <p class="desc-plat__tarif">35€</p>
                             </div>
                         </div>
                     
-                        <div class="descriptionPlat">
+                        <div class="desc-plat">
                             <h3>Velouté de cèpes</h3>
                             <p>Aux truffes</p>
-                            <p class="prixPlat">20€</p>
+                            <p class="desc-plat__tarif">20€</p>
                             </div>
                         </div>
                     </div>
 
-                        <!-- Plats -->
-                        <h2>PLATS</h2>
-                        <div id="underline"></div>
-                        <div id="listePlats">
-                            <div class="descriptionPlat">
-                                <h3>Poulet rôti aux herbes de Provence</h3>
-                                <p>Et sa crème de truffe</p>
-                                <p class="prixPlat">40€</p>
-                                </div>
+                    <!-- Plats -->
+                    <h2>PLATS</h2>
+                    <div class="underline-titre"></div>
+                    <div class="menu">
+                        <div class="desc-plat">
+                            <h3>Poulet rôti aux herbes de Provence</h3>
+                            <p>Et sa crème de truffe</p>
+                            <p class="desc-plat__tarif">40€</p>
                             </div>
+                        </div>
+                        <div class="desc-plat">
+                            <h3>Langouste rôti</h3>
+                            <p>Et ses légumes de saison</p>
+                            <p class="desc-plat__tarif">35€</p>
+                            </div>
+                        </div>
+                        <div class="desc-plat">
+                            <h3>Côte de boeuf Angus</h3>
+                            <p>Et sa purée de panaie</p>
+                            <p class="desc-plat__tarif">44€</p>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="descriptionPlat">
-                                <h3>Langouste rôti</h3>
-                                <p>Et ses légumes de saison</p>
-                                <p class="prixPlat">35€</p>
-                                </div>
+                        <!-- Dessert -->
+                    <h2>DESSERTS</h2>
+                    <div class="underline-titre"></div>
+                    <div class="menu">
+                        <div class="desc-plat">
+                            <h3>Farandole de desserts</h3>
+                            <p>Du chef</p>
+                            <p class="desc-plat__tarif">18€</p>
                             </div>
-
-                            <div class="descriptionPlat">
-                                <h3>Côte de boeuf Angus</h3>
-                                <p>Et sa purée de panaie</p>
-                                <p class="prixPlat">44€</p>
-                                </div>
+                        </div>
+                     <div class="desc-plat">
+                            <h3>Crème brûlée</h3>
+                            <p>Revisitée</p>
+                            <p class="desc-plat__tarif">22€</p>
                             </div>
-                        
-                            <!-- Dessert -->
-                        <h2>DESSERTS</h2>
-                        <div id="underline"></div>
-                        <div id="listePlats">
-                            <div class="descriptionPlat">
-                                <h3>Farandole de desserts</h3>
-                                <p>Du chef</p>
-                                <p class="prixPlat">18€</p>
-                                </div>
-                            </div>
-
-                            <div class="descriptionPlat">
-                                <h3>Crème brûlée</h3>
-                                <p>Revisitée</p>
-                                <p class="prixPlat">22€</p>
-                                </div>
-                            </div>
-
-                            <div class="descriptionPlat">
-                                <h3>Tiramisu</h3>
-                                <p>À la noisette</p>
-                                <p class="prixPlat">23€</p>
-                                </div>
+                        </div>
+                     <div class="desc-plat">
+                            <h3>Tiramisu</h3>
+                            <p>À la noisette</p>
+                            <p class="desc-plat__tarif">23€</p>
                             </div>
                         </div>
                     </div>
                 </section>
                 
-                <div id="boutonCommander">
+                <div id="div__commander">
                     <button type="button">Commander</button>
                 </div>
 
             </main>
 
             <footer>
-                <img src="images/logo_ohmyfood.png" alt="Logo Ohmyfood" />
-                <ul>
-                    <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
-                    <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
+                <h1>ohmyfood</h1>
+                <ul class="footer__contact">
+                    <li><div class ="footer__picto-contact"><i class="fas fa-utensils"></i></div><a href="#">Proposer un restaurant</a></li>
+                    <li><div class="footer__picto-contact"><i class="fas fa-hands-helping"></i></div><a href="#">Devenir partenaire</a></li>
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="mailto:ohmyfood@openclassrooms.com">Contact</a></li>
                 </ul>

@@ -7,122 +7,123 @@
     </head>
 
     <body>
-        <div id="blockPage">
+        <div id="page-container">
             <header>
-                <div>
-                    <div id="retourAccueil">
+                <div class="header__heading">
+                    <div class="header--retour-index">
                         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
                     </div>
-                    <img src="images/logo_ohmyfood.png" alt="Logo Ohmyfood" />
+                    <img class="header__logo" src="images/logo_ohmyfood.png" alt="Logo Ohmyfood" />
                 </div>
             </header>
 
             <main>
-                <img src="images/la_note_enchantee.jpg" alt="Restaurant La note enchantée" />
-                <section> <!-- Menu -->
-                    <div id="nomRestaurant">
+                <img class="main__photo-resto" src="images/la_note_enchantee.jpg" alt="Restaurant La note enchantée" />
+                <section class="menu"> <!-- Menu -->
+                    <div class="nom-resto">
                         <h1>La note enchantée</h1>
-                        <div class="pictoCoeur">
-                            <i class="far fa-heart"></i>
+                        <div class="div__coeur">
+                            <i class="far fa-heart coeurvide"></i>
+                            <i class="far fa-heart coeurvide coeurplein"></i>
                         </div>
                     </div>
 
                     <!-- Entrées -->
                     <h2>ENTRÉES</h2>
-                    <div id="underline"></div>
-                    <div class="listePlats"></div>
-                        <div class="descriptionPlat">
+                    <div class="underline-titre"></div>
+                    <div class="menu">
+                        <div class="desc-plat">
                             <h3>Ravioles de foie gras</h3>
                             <p>Accompagnés de leur crème à la truffe</p>
-                            <p class="prixPlat">25€</p>
+                            <p class="desc-plat__tarif">25€</p>
                         </div>               
                         
-                        <div class="descriptionPlat">
+                        <div class="desc-plat">
                             <h3>Caviar osciètre</h3>
                             <p>Sur blini à la farine de blé noir</p>
-                            <p class="prixPlat">35€</p>
+                            <p class="desc-plat__tarif">35€</p>
                             </div>
                         </div>
                     
-                        <div class="descriptionPlat">
+                        <div class="desc-plat">
                             <h3>Homard et espuma de potiron</h3>
                             <p>Mariné aux zestes d'orange</p>
-                            <p class="prixPlat">20€</p>
+                            <p class="desc-plat__tarif">20€</p>
                             </div>
                         </div>
 
-                        <div class="descriptionPlat">
+                        <div class="desc-plat">
                             <h3>Foie gras de canard cuit entier</h3>
                             <p>Confiture de figue et pain toasté</p>
-                            <p class="prixPlat">35€</p>
+                            <p class="desc-plat__tarif">35€</p>
                             </div>
                         </div>
                     </div>
 
                         <!-- Plats -->
                         <h2>PLATS</h2>
-                        <div id="underline"></div>
-                        <div id="listePlats">
-                            <div class="descriptionPlat">
+                        <div class="underline-titre"></div>
+                        <div class="menu">
+                            <div class="desc-plat">
                                 <h3>Noix de coquilles Saint-Jacques</h3>
                                 <p>Sur lit de purée céleri-rave</p>
-                                <p class="prixPlat">40€</p>
+                                <p class="desc-plat__tarif">40€</p>
                                 </div>
                             </div>
 
-                            <div class="descriptionPlat">
+                            <div class="desc-plat">
                                 <h3>Langoustine poêlée</h3>
                                 <p>Purée de patate douce</p>
-                                <p class="prixPlat">35€</p>
+                                <p class="desc-plat__tarif">35€</p>
                                 </div>
                             </div>
 
-                            <div class="descriptionPlat">
+                            <div class="desc-plat">
                                 <h3>Mijoté de queue de boeuf</h3>
                                 <p>Et riz sauvage au zestes de citron</p>
-                                <p class="prixPlat">44€</p>
+                                <p class="desc-plat__tarif">44€</p>
                                 </div>
                             </div>
                         
                             <!-- Dessert -->
                         <h2>DESSERTS</h2>
-                        <div id="underline"></div>
-                        <div id="listePlats">
-                            <div class="descriptionPlat">
+                        <div class="underline-titre"></div>
+                        <div class="menu">
+                            <div class="desc-plat">
                                 <h3>Macaron noisette et chocolat</h3>
                                 <p>Glace au caramel brun et sel de Guérande</p>
-                                <p class="prixPlat">18€</p>
+                                <p class="desc-plat__tarif">18€</p>
                                 </div>
                             </div>
 
-                            <div class="descriptionPlat">
+                            <div class="desc-plat">
                                 <h3>Baba au rhum révisité</h3>
                                 <p>Avec son coulis de citron</p>
-                                <p class="prixPlat">22€</p>
+                                <p class="desc-plat__tarif">22€</p>
                                 </div>
                             </div>
 
-                            <div class="descriptionPlat">
+                            <div class="desc-plat">
                                 <h3>Tarte au citron meringuée</h3>
                                 <p>Déstructuré</p>
-                                <p class="prixPlat">23€</p>
+                                <p class="desc-plat__tarif">23€</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 
-                <div id="boutonCommander">
+                <div id="btn-commander">
                     <button type="button">Commander</button>
                 </div>
 
             </main>
 
             <footer>
-                <img src="images/logo_ohmyfood.png" alt="Logo Ohmyfood" />
-                <ul>
-                    <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
-                    <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
+                <h1>ohmyfood</h1>
+                <ul class="footer__contact">
+                    <li><div class ="footer__picto-contact"><i class="fas fa-utensils"></i></div><a href="#">Proposer un restaurant</a></li>
+                    <li><div class="footer__picto-contact"><i class="fas fa-hands-helping"></i></div><a href="#">Devenir partenaire</a></li>
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="mailto:ohmyfood@openclassrooms.com">Contact</a></li>
                 </ul>
