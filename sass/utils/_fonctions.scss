@@ -1,4 +1,3 @@
-/* fonction pour assombrir la police des label "nouveau" des restaurants */
 @function fonc-label($couleur){
     @return darken($couleur, 50%)
 }    
