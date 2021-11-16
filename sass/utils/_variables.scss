@@ -1,3 +1,9 @@
-@mixin padding-sides {
-    padding: 0 20px 0 20px;
-}
+/* Couleurs */
+$couleur-primaire: #9356dc;
+$couleur-secondaire: #ff79da;
+$couleur-tertiaire: #99e2d0;
+$couleur-ombre: hsl(0, 0%, 65%);
+$couleur-gris-clair: hsl(0, 0%, 95%);
+$couleur-form: hsl(0, 0%, 90%);
+$couleur-footer: hsl(0, 0%, 25%);
+$couleur-police-intro: hsl(0, 0%, 30%);

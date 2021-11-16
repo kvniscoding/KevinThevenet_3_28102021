@@ -1,0 +1,9 @@
+/* mixin */
+@mixin padding-sides {
+    padding: 0 20px 0 20px;
+}
+
+/* Foncer la couleur des label "nouveau" pour les restaurants */
+@mixin label-nouveau($couleur: fonc-label($couleur-tertiaire)){
+    color: $couleur;
+}

@@ -1,4 +1,9 @@
+@charset "UTF-8";
+.page-container {
+  width: 100%; }
+
 * {
+  max-width: 1024px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -11,9 +16,13 @@ a {
 ul {
   list-style-type: none; }
 
+/* Couleurs */
+/* mixin */
+/* Foncer la couleur des label "nouveau" pour les restaurants */
 header {
-  padding: 10px 0 10px 20px;
-  box-shadow: 0 3px 3px darkgray;
+  margin-bottom: 6px;
+  padding: 10px;
+  box-shadow: 0 3px 10px #a6a6a6;
   display: flex; }
   header figure {
     width: 50%;
@@ -46,5 +55,109 @@ footer {
       footer ul li a {
         font-weight: 500;
         color: white; }
+
+/* Refactorisation */
+.presentation-site__intro p, .fonctionnement-site__nom-section, h1 {
+  font-size: 1.2em;
+  font-weight: 500; }
+
+h2 {
+  font-weight: 500;
+  color: black; }
+
+/* Partie présentation du site */
+section .presentation-site {
+  margin-bottom: 35px;
+  padding-bottom: 45px;
+  background-color: #f2f2f2;
+  text-align: center;
+  color: black;
+  /* Bouton explorer */ }
+  section .presentation-site form {
+    padding: 10px;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center; }
+    section .presentation-site form button {
+      margin-right: 10px;
+      background-color: #e6e6e6;
+      border: none; }
+    section .presentation-site form input {
+      background-color: #e6e6e6;
+      border: none;
+      width: 125px;
+      font-weight: 500; }
+  section .presentation-site p {
+    color: #4d4d4d; }
+  section .presentation-site .presentation-site__intro {
+    margin: 25px 0 15px 0; }
+  section .presentation-site .presentation-site__btn-ancre-restau {
+    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+    margin: 20px 0 0px 0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px; }
+    section .presentation-site .presentation-site__btn-ancre-restau a {
+      color: white;
+      font-weight: 500; }
+
+/* Partie fonctionnement du site */
+.fonctionnement-site {
+  padding: 0 20px 0 20px; }
+  .fonctionnement-site .fonctionnement-container {
+    margin: 20px 0 35px 0; }
+    .fonctionnement-site .fonctionnement-container .etape-commande {
+      height: 3em;
+      margin: 15px auto;
+      border-radius: 15px;
+      background-color: #f2f2f2;
+      box-shadow: 0px 0px 10px #a6a6a6;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .fonctionnement-site .fonctionnement-container .etape-commande .num-etape {
+        width: 1.2em;
+        height: 1.2em;
+        margin-left: -10px;
+        background-color: #9356dc;
+        border-radius: 50px;
+        text-align: center; }
+        .fonctionnement-site .fonctionnement-container .etape-commande .num-etape p {
+          color: white;
+          font-weight: 500; }
+      .fonctionnement-site .fonctionnement-container .etape-commande .picto-etape {
+        margin: 0 15px; }
+      .fonctionnement-site .fonctionnement-container .etape-commande p {
+        font-weight: 500;
+        color: black; }
+
+/* Section liste restaurants */
+.liste-restaurants {
+  padding: 0 20px 0 20px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #f2f2f2; }
+  .liste-restaurants figure {
+    padding: 15px 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: white; }
+    .liste-restaurants figure .nouveau-restaurant {
+      width: 4.3em;
+      height: 1.2em;
+      text-align: center;
+      background-color: #99e2d0;
+      border-radius: 2px;
+      color: #1b6150; }
+      .liste-restaurants figure .nouveau-restaurant p {
+        font-size: 0.8em;
+        font-weight: 500; }
+    .liste-restaurants figure img {
+      width: 100%;
+      height: 10em;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0; }
+    .liste-restaurants figure figcaption .coeur-like .coeur-like--plein {
+      display: none; }
 
 /*# sourceMappingURL=style.css.map */

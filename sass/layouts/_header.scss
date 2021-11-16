@@ -1,6 +1,7 @@
 header {
-    padding: 10px 0 10px 20px;
-    box-shadow: 0 3px 3px darkgray;
+    margin-bottom: 6px;
+    padding: 10px;
+    box-shadow: 0 3px 10px $couleur-ombre;
     display: flex;
     & figure {
         width: 50%;
@@ -12,7 +13,7 @@ header {
             object-fit: fill;
         }
     }
-    & .header__retour-index a i {
+    & .header__retour-index a i{
         font-size: 1.5em;
     }
 }
