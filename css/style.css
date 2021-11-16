@@ -19,6 +19,7 @@ ul {
 /* Couleurs */
 /* mixin */
 /* Foncer la couleur des label "nouveau" pour les restaurants */
+/* fonction pour assombrir la police des label "nouveau" des restaurants */
 header {
   margin-bottom: 6px;
   padding: 10px;
@@ -157,7 +158,5 @@ section .presentation-site {
       height: 10em;
       object-fit: cover;
       border-radius: 15px 15px 0 0; }
-    .liste-restaurants figure figcaption .coeur-like .coeur-like--plein {
-      display: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,3 +7,11 @@
 @mixin label-nouveau($couleur: fonc-label($couleur-tertiaire)){
     color: $couleur;
 }
+
+@mixin coeur-vide {
+    border-color: white;
+}
+
+@mixin coeur-plein {
+    background-image: linear-gradient(to right, $couleur-secondaire, $couleur-primaire);
+}
