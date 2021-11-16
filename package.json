@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 de la formation OC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvniscoding/KevinThevenet_3_28102021.git"
+  },
+  "author": "Kevin Thevenet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvniscoding/KevinThevenet_3_28102021/issues"
+  },
+  "homepage": "https://github.com/kvniscoding/KevinThevenet_3_28102021#readme"
+}
