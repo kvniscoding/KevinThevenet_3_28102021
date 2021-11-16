@@ -1,0 +1,28 @@
+footer {
+    padding: 20px 0 20px 20px;
+    background-color: hsl(0, 0%, 25%);
+    font-weight: 500;
+    color: white;
+    & h3 {
+        font-family: 'Shrikhand', sans-serif;
+    }
+    ul {
+        margin-top: 20px;
+        & li {
+        display: flex;
+            & .footer__picto-contact {
+                margin-right: 5px;
+            }
+            & .fa-hands-helping {
+                font-size: small;
+            }
+            & .footer__picto-contact-mains {
+                margin-right: 3px;
+            }
+            & a {
+                font-weight: 500;
+                color: white;
+            }
+        }
+    }
+}
