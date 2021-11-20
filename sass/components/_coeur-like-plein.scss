@@ -1,0 +1,5 @@
+.coeur-like--plein {
+    background: linear-gradient(1turn, $couleur-secondaire, $couleur-primaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

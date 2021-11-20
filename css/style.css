@@ -160,4 +160,9 @@ section .presentation-site {
     .liste-restaurants figure figcaption .coeur-like .coeur-like--plein {
       display: none; }
 
+.coeur-like--plein {
+  background: linear-gradient(1turn, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 /*# sourceMappingURL=style.css.map */
