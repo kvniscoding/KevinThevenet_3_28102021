@@ -138,7 +138,6 @@ section .presentation-site {
   padding-bottom: 35px;
   background-color: #f2f2f2; }
   .liste-restaurants figure {
-    padding: 15px 10px;
     margin-top: 15px;
     border-radius: 15px;
     background-color: white; }
@@ -148,6 +147,9 @@ section .presentation-site {
       text-align: center;
       background-color: #99e2d0;
       border-radius: 2px;
+      position: absolute;
+      margin-top: -150px;
+      margin-left: 275px;
       color: #1b6150; }
       .liste-restaurants figure .nouveau-restaurant p {
         font-size: 0.8em;
@@ -157,8 +159,10 @@ section .presentation-site {
       height: 10em;
       object-fit: cover;
       border-radius: 15px 15px 0 0; }
-    .liste-restaurants figure figcaption .coeur-like .coeur-like--plein {
-      display: none; }
+    .liste-restaurants figure figcaption {
+      padding: 15px 10px; }
+      .liste-restaurants figure figcaption .coeur-like .coeur-like--plein {
+        display: none; }
 
 .coeur-like--plein {
   background: linear-gradient(1turn, #ff79da, #9356dc);
