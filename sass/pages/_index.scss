@@ -8,10 +8,14 @@ h2 {
     color: black;
 }
 
-/* Partie présentation du site */
+header {
+    border-radius: 0 0 15px 15px;
+}
+
 section {
-    & .presentation-site {    
-        margin-bottom: 35px;
+    & .presentation-site {  
+        width: 95%;
+        margin: auto;
         padding-bottom: 45px;
         background-color: $couleur-gris-clair;
         text-align: center;
@@ -54,13 +58,16 @@ section {
     }
 }
 
-
 /* Partie fonctionnement du site */
 .fonctionnement-site {
     @include padding-sides;
+    padding: 20px;
+    box-shadow: 0 0 10px #a6a6a6;
+    border-radius: 15px;
     & .fonctionnement-container {
-        margin: 20px 0 35px 0;
+        display: flex;
         & .etape-commande {
+            width: 30%;
             height: 3em;
             margin: 15px auto;
             border-radius: 15px;
@@ -96,8 +103,17 @@ section {
     @include padding-sides;
     padding-top: 35px;
     padding-bottom: 35px;
+    margin-top: 35px;
+    border-radius: 15px 15px 0 0;
     background-color: $couleur-gris-clair;
+    & .vignettes-restaurants-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     & figure {
+        width: 45%;
         margin-top: 15px;
         border-radius: 15px;
         background-color: white;
@@ -127,6 +143,134 @@ section {
             .coeur-like {
                 & .coeur-like--plein {
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Smartphone */
+@media all and (max-width: 768px) {
+    /* Partie présentation du site */
+    section {
+        & .presentation-site {    
+            margin-bottom: 35px;
+            padding-bottom: 45px;
+            background-color: $couleur-gris-clair;
+            text-align: center;
+            color: black;
+            & form {
+                padding: 10px;
+                background-color: $couleur-form;
+                display: flex;
+                justify-content: center;
+                & button {
+                    margin-right: 10px;
+                    background-color: $couleur-form;
+                    border: none;
+                }
+                & input {
+                    background-color: $couleur-form;
+                    border: none;
+                    width: 125px;
+                    font-weight: 500;
+                }
+            }
+            & p {
+                color: $couleur-police-intro;
+            }
+            .presentation-site__intro {
+                margin: 25px 0 15px 0;
+            }
+            /* Bouton explorer */
+            & .presentation-site__btn-ancre-restau {
+                background-image: linear-gradient(to bottom, $couleur-secondaire, $couleur-primaire);
+                margin: 20px 0 0px 0;
+                padding: 10px 30px;
+                border: none;
+                border-radius: 25px;
+                & a {
+                    color: white;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+
+    /* Partie fonctionnement du site */
+    .fonctionnement-site {
+        @include padding-sides;
+        & .fonctionnement-container {
+            margin: 20px 0 35px 0;
+            & .etape-commande {
+                height: 3em;
+                margin: 15px auto;
+                border-radius: 15px;
+                background-color: $couleur-gris-clair;
+                box-shadow: 0px 0px 10px $couleur-ombre;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                & .num-etape {
+                    width: 1.2em;
+                    height: 1.2em;
+                    margin-left: -10px;
+                    background-color: $couleur-primaire;
+                    border-radius: 50px;
+                    text-align: center;
+                    & p {
+                        color: white;
+                        font-weight: 500; }
+                }
+                & .picto-etape {
+                    margin: 0 15px;
+                }
+                & p {
+                    font-weight: 500;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    /* Section liste restaurants */
+    .liste-restaurants {
+        @include padding-sides;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-color: $couleur-gris-clair;
+        & figure {
+            margin-top: 15px;
+            border-radius: 15px;
+            background-color: white;
+            & .nouveau-restaurant {
+                width: 4.3em;
+                height: 1.2em;
+                text-align: center;
+                background-color: $couleur-tertiaire;
+                border-radius: 2px;
+                position: absolute;
+                margin-top: -150px;
+                margin-left: 275px;
+                @include label-nouveau;
+                & p {
+                    font-size: 0.8em;
+                    font-weight: 500;
+                }
+            }
+            & img {
+                width: 100%;
+                height: 10em;
+                object-fit: cover;
+                border-radius: 15px 15px 0 0;
+            }
+            & figcaption {
+                padding: 15px 10px;
+                .coeur-like {
+                    & .coeur-like--plein {
+                        display: none;
+                    }
                 }
             }
         }
