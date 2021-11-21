@@ -1,9 +1,9 @@
 @charset "UTF-8";
 .page-container {
-  width: 100%; }
+  max-width: 1024px;
+  margin: auto; }
 
 * {
-  max-width: 1024px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -37,6 +37,7 @@ header {
 
 footer {
   padding: 20px 0 20px 20px;
+  border-radius: 15px 15px 0 0;
   background-color: #404040;
   font-weight: 500;
   color: white; }
@@ -65,9 +66,12 @@ h2 {
   font-weight: 500;
   color: black; }
 
-/* Partie présentation du site */
+header {
+  border-radius: 0 0 15px 15px; }
+
 section .presentation-site {
-  margin-bottom: 35px;
+  width: 95%;
+  margin: auto;
   padding-bottom: 45px;
   background-color: #f2f2f2;
   text-align: center;
@@ -103,10 +107,14 @@ section .presentation-site {
 
 /* Partie fonctionnement du site */
 .fonctionnement-site {
-  padding: 0 20px 0 20px; }
+  padding: 0 20px 0 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px #a6a6a6;
+  border-radius: 15px; }
   .fonctionnement-site .fonctionnement-container {
-    margin: 20px 0 35px 0; }
+    display: flex; }
     .fonctionnement-site .fonctionnement-container .etape-commande {
+      width: 30%;
       height: 3em;
       margin: 15px auto;
       border-radius: 15px;
@@ -136,8 +144,17 @@ section .presentation-site {
   padding: 0 20px 0 20px;
   padding-top: 35px;
   padding-bottom: 35px;
-  background-color: #f2f2f2; }
+  margin: 35px 0 35px 0;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px #a6a6a6; }
+  .liste-restaurants .vignettes-restaurants-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
   .liste-restaurants figure {
+    width: 45%;
     margin-top: 15px;
     border-radius: 15px;
     background-color: white; }
@@ -154,9 +171,10 @@ section .presentation-site {
       .liste-restaurants figure .nouveau-restaurant p {
         font-size: 0.8em;
         font-weight: 500; }
-    .liste-restaurants figure img {
+    .liste-restaurants figure .info-restaurant__photo {
       width: 100%;
       height: 10em;
+      margin: 0;
       object-fit: cover;
       border-radius: 15px 15px 0 0; }
     .liste-restaurants figure figcaption {
@@ -164,9 +182,129 @@ section .presentation-site {
       .liste-restaurants figure figcaption .coeur-like .coeur-like--plein {
         display: none; }
 
+/* Smartphone */
+@media all and (max-width: 768px) {
+  /* Partie présentation du site */
+  header {
+    border-radius: 0; }
+
+  section .presentation-site {
+    width: 100%;
+    margin-bottom: 35px; }
+
+  /* Partie fonctionnement du site */
+  .fonctionnement-site {
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+    border-radius: 0; }
+    .fonctionnement-site .fonctionnement-container {
+      margin: 20px 0 35px 0;
+      display: block; }
+      .fonctionnement-site .fonctionnement-container .etape-commande {
+        width: 100%; }
+
+  /* Section liste restaurants */
+  .liste-restaurants {
+    margin-top: 0;
+    border-radius: 0; }
+    .liste-restaurants .vignettes-restaurants-container {
+      display: block; }
+    .liste-restaurants figure {
+      width: 100%; } }
+.nom-resto__restaurant {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 1.5em; }
+
+h3, p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  main figure {
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin: auto; }
+    main figure img {
+      width: 100%;
+      height: 250px;
+      margin-top: 20px;
+      object-fit: cover;
+      border-radius: 15px; }
+
+h1 {
+  font-size: 2em; }
+
+.section-menu {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #a6a6a6; }
+  .section-menu .nom-resto {
+    display: flex;
+    justify-content: space-between; }
+    .section-menu .nom-resto .div__coeur .coeur-like--plein {
+      display: none; }
+  .section-menu article {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+    .section-menu article .underline-titre {
+      width: 40px;
+      margin-bottom: 10px;
+      border-top: 2px solid #99e2d0; }
+    .section-menu article .block-menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+      .section-menu article .block-menu .menu {
+        width: 30%;
+        height: 40px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; }
+        .section-menu article .block-menu .menu .desc-plat {
+          width: 75%; }
+          .section-menu article .block-menu .menu .desc-plat h3 {
+            font-weight: 500; }
+        .section-menu article .block-menu .menu .commande {
+          width: 50px;
+          height: 60px;
+          background-color: #99e2d0;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          margin: 0 -10px -10px 10px;
+          border-radius: 0 15px 15px 0; }
+          .section-menu article .block-menu .menu .commande .fa-check-circle {
+            color: white;
+            background-clip: text; }
+
 .coeur-like--plein {
   background: linear-gradient(1turn, #ff79da, #9356dc);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+.btn-commander {
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  margin: 20px 0 20px 0;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500; }
 
 /*# sourceMappingURL=style.css.map */

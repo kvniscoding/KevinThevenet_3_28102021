@@ -21,28 +21,26 @@
     </head>
 
     <body>
-        <div id="page-container">
+        <div class="page-container">
             <header>
-                <div class="header__heading">
-                    <div class="header--retour-index">
-                        <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
-                    </div>
-                    <figure>
-                    	<img class="header__logo" src="../images/logo_ohmyfood.png" alt="Logo Ohmyfood" />
-                    </figure>
+                <div class="header__retour-index">
+                    <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
                 </div>
+                <figure>
+                    <img class="header__logo" src="../images/logo_ohmyfood.png" alt="Logo Ohmyfood" />
+                </figure>
             </header>
 
             <main>
                 <figure>
                     <img class="main__photo-resto" src="../images/le_delice_des_sens.jpg" alt="Restaurant Le délice des sens" />
                 </figure>
-                <section class="menu"> <!-- Menu -->
+                <section class="section-menu"> <!-- Menu -->
                     <div class="nom-resto">
                         <h1 class="nom-resto__restaurant">Le délice des sens</h1>
                         <div class="div__coeur">
-                            <i class="far fa-heart coeurvide"></i>
-                            <i class="far fa-heart coeurvide coeurplein"></i>
+                            <i class="far fa-heart coeur-like--vide"></i>
+                            <i class="fas fa-heart coeurvide coeur-like--plein"></i>
                         </div>
                     </div>
 
@@ -60,7 +58,7 @@
                                     <p>25€</p>
                                 </div>
                                 <div class="commande">
-                                    <i class="fas fa-check commande__check"></i>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
                             </div>               
 
@@ -69,11 +67,11 @@
                                     <h3>Bouchée de homard croustillant</h3>
                                     <p>Et sa farandole de petits légumes</p>
                                 </div>
-                                <div class="desc-plat__tarif"></div>
+                                <div class="desc-plat__tarif">
                                     <p>35€</p>
-                                </di>
+                                </div>
                                 <div class="commande">
-                                    <i class="fas fa-check commande__check"></i>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
                             </div>
 
@@ -82,11 +80,11 @@
                                     <h3>Velouté de cèpes</h3>
                                     <p>Aux truffes</p>
                                 </div>
-                                <div class="desc-plat__tarif"></div>
+                                <div class="desc-plat__tarif">
                                     <p>20€</p>
                                 </div>
                                 <div class="commande">
-                                    <i class="fas fa-check commande__check"></i>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
                             </div>
                         </div>
@@ -102,11 +100,11 @@
                                     <h3>Poulet rôti aux herbes de Provence</h3>
                                     <p>Et sa crème de truffe</p>
                                 </div>
-                                <div class="desc-plat__tarif"></div>
+                                <div class="desc-plat__tarif">
                                     <p>40€</p>
                                 </div>
                                 <div class="commande">
-                                    <i class="fas fa-check commande__check"></i>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
                             </div>
 
@@ -115,11 +113,11 @@
                                     <h3>Langouste rôti</h3>
                                     <p>Et ses légumes de saison</p>
                                 </div>
-                                <div class="desc-plat__tarif"></div>
+                                <div class="desc-plat__tarif">
                                     <p>35€</p>
                                 </div>
                                 <div class="commande">
-                                    <i class="fas fa-check commande__check"></i>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
                             </div>
 
@@ -128,11 +126,11 @@
                                     <h3>Côte de boeuf Angus</h3>
                                     <p>Et sa purée de panaie</p>
                                 </div>
-                                <div class="desc-plat__tarif"></div>
+                                <div class="desc-plat__tarif">
                                     <p>44€</p>
                                 </div>
                                 <div class="commande">
-                                    <i class="fas fa-check commande__check"></i>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
                             </div>
                         </div>
@@ -148,11 +146,11 @@
                                     <h3>Farandole de desserts</h3>
                                     <p>Du chef</p>
                                 </div>
-                                <div class="desc-plat__tarif"></div>
+                                <div class="desc-plat__tarif">
                                     <p>18€</p>
                                 </div>
                                 <div class="commande">
-                                    <i class="fas fa-check commande__check"></i>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
                             </div>
 
@@ -161,11 +159,11 @@
                                     <h3>Crème brûlée</h3>
                                     <p>Revisitée</p>
                                 </div>
-                                <div class="desc-plat__tarif"></div>
+                                <div class="desc-plat__tarif">
                                     <p>22€</p>
                                 </div>
                                 <div class="commande">
-                                    <i class="fas fa-check commande__check"></i>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
                             </div>
 
@@ -174,21 +172,19 @@
                                     <h3>Tiramisu</h3>
                                     <p>À la noisette</p>
                                 </div>
-                                <div class="desc-plat__tarif"></div>
+                                <div class="desc-plat__tarif">
                                     <p>23€</p>
                                 </div>
                                 <div class="commande">
-                                    <i class="fas fa-check commande__check"></i>
+                                    <i class="fas fa-check-circle"></i>
                                 </div>
                             </div>
                         </div>
                     </article>
                 </section>
                 
-                <div id="div__commander">
-                    <button type="button">Commander</button>
-                </div>
-
+                <button class="btn-commander" type="button">Commander</button>
+                
             </main>
 
             <footer>
