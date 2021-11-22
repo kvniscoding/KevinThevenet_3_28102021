@@ -17,3 +17,11 @@ header {
         font-size: 1.5em;
     }
 }
+
+/* Smartphone */
+@media all and (max-width: 768px) {
+    header {
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+}

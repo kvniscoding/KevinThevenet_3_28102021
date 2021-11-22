@@ -118,6 +118,7 @@ section {
         margin-top: 15px;
         border-radius: 15px;
         background-color: white;
+        position: relative;
         & .nouveau-restaurant {
             width: 4.3em;
             height: 1.2em;
@@ -125,8 +126,8 @@ section {
             background-color: $couleur-tertiaire;
             border-radius: 2px;
             position: absolute;
-            margin-top: -150px;
-            margin-left: 275px;
+            top: 5px;
+            right: 15px;
             @include label-nouveau;
             & p {
                 font-size: 0.8em;
@@ -158,37 +159,41 @@ section {
         border-radius: 0;
     }
     
-    section {
-        & .presentation-site {
-            width: 100%;    
-            margin-bottom: 35px;
-        }
-    }
-
-    /* Partie fonctionnement du site */
-    .fonctionnement-site {
-        padding-top: 0;
-        padding-bottom: 0;
-        box-shadow: none;
-        border-radius: 0;
-        & .fonctionnement-container {
-            margin: 20px 0 35px 0;
-            display: block;
-            & .etape-commande {
-                width: 100%;
+    .main-index {
+        display: block;
+        & section {
+            & .presentation-site {
+                width: 100%;    
+                margin-bottom: 35px;
             }
         }
-    }
 
-    /* Section liste restaurants */
-    .liste-restaurants {
-        margin-top: 0;
-        border-radius: 0;
-        & .vignettes-restaurants-container {
-            display: block;
+        /* Partie fonctionnement du site */
+        .fonctionnement-site {
+            padding-top: 0;
+            padding-bottom: 0;
+            box-shadow: none;
+            border-radius: 0;
+            & .fonctionnement-container {
+                margin: 20px 0 35px 0;
+                display: block;
+                & .etape-commande {
+                    width: 100%;
+                }
+            }
         }
-        & figure {
-            width: 100%;
+
+        /* Section liste restaurants */
+        .liste-restaurants {
+            margin-top: 0;
+            margin-bottom: 0;
+            border-radius: 0;
+            & .vignettes-restaurants-container {
+                display: block;
+            }
+            & figure {
+                width: 100%;
+            }
         }
     }
 }
