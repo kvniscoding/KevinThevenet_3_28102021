@@ -129,10 +129,8 @@ section {
             top: 5px;
             right: 15px;
             @include label-nouveau;
-            & p {
-                font-size: 0.8em;
-                font-weight: 500;
-            }
+            font-size: 0.8em;
+            font-weight: 500;
         }
         & .info-restaurant__photo {
             width: 100%;
@@ -143,6 +141,9 @@ section {
         }
         & figcaption {
             padding: 15px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             .coeur-like {
                 & .coeur-like--plein {
                     display: none;

@@ -177,10 +177,9 @@ section .presentation-site {
       position: absolute;
       top: 5px;
       right: 15px;
-      color: #1b6150; }
-      .liste-restaurants figure .nouveau-restaurant p {
-        font-size: 0.8em;
-        font-weight: 500; }
+      color: #1b6150;
+      font-size: 0.8em;
+      font-weight: 500; }
     .liste-restaurants figure .info-restaurant__photo {
       width: 100%;
       height: 10em;
@@ -188,7 +187,10 @@ section .presentation-site {
       object-fit: cover;
       border-radius: 15px 15px 0 0; }
     .liste-restaurants figure figcaption {
-      padding: 15px 10px; }
+      padding: 15px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
       .liste-restaurants figure figcaption .coeur-like .coeur-like--plein {
         display: none; }
 
@@ -239,7 +241,7 @@ main {
   justify-content: flex-start;
   align-items: center; }
   main figure {
-    width: 95%;
+    width: 100%;
     margin-top: 20px;
     border-radius: 15px;
     margin: auto; }
@@ -253,32 +255,33 @@ main {
 h1 {
   font-size: 2em; }
 
-.section-menu {
+.article-menu {
   width: 100%;
   margin-top: 20px;
-  padding: 15px;
   background-color: #f2f2f2;
   border-radius: 15px;
   box-shadow: 0 0 10px #a6a6a6; }
-  .section-menu .nom-resto {
+  .article-menu .nom-resto {
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .section-menu .nom-resto .div__coeur .coeur-like--plein {
+    .article-menu .nom-resto .div__coeur .coeur-like--plein {
       display: none; }
-  .section-menu article {
+  .article-menu section {
+    padding: 15px;
     margin-top: 10px;
     margin-bottom: 20px; }
-    .section-menu article .underline-titre {
+    .article-menu section .underline-titre {
       width: 40px;
       margin-bottom: 10px;
       border-top: 2px solid #99e2d0; }
-    .section-menu article .block-menu {
+    .article-menu section .block-menu {
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap; }
-      .section-menu article .block-menu .menu {
+      .article-menu section .block-menu .menu {
         width: 30%;
         height: 40px;
         margin-top: 10px;
@@ -288,20 +291,27 @@ h1 {
         display: flex;
         justify-content: space-between;
         align-items: flex-end; }
-        .section-menu article .block-menu .menu .desc-plat {
+        .article-menu section .block-menu .menu .desc-plat {
           width: 75%; }
-          .section-menu article .block-menu .menu .desc-plat h3 {
+          .article-menu section .block-menu .menu .desc-plat h3 {
             font-weight: 500; }
-        .section-menu article .block-menu .menu .commande {
-          width: 50px;
+        .article-menu section .block-menu .menu .desc-plat__tarif {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end; }
+        .article-menu section .block-menu .menu .commande {
+          width: 60px;
           height: 60px;
           background-color: #99e2d0;
           display: none;
           justify-content: center;
           align-items: center;
-          margin: 0 -10px -10px 10px;
+          margin: 0 -72px -10px 10px;
+          overflow: hidden;
           border-radius: 0 15px 15px 0; }
-          .section-menu article .block-menu .menu .commande .fa-check-circle {
+          .article-menu section .block-menu .menu .commande .fa-check-circle {
             color: white;
             background-clip: text; }
 
@@ -313,19 +323,19 @@ h1 {
     .main-restaurant figure img {
       margin-top: 0;
       border-radius: 0; }
-  .main-restaurant .section-menu {
+  .main-restaurant .article-menu {
     margin-top: -60px;
     padding: 30px 0 0 0;
     box-shadow: none;
     border-radius: 15px 15px 0 0; }
-    .main-restaurant .section-menu .nom-resto {
+    .main-restaurant .article-menu .nom-resto {
       padding: 0 10px 0 10px; }
-    .main-restaurant .section-menu article {
+    .main-restaurant .article-menu section {
       margin-top: 30px;
       padding: 0 10px 0 10px; }
-      .main-restaurant .section-menu article .block-menu {
+      .main-restaurant .article-menu section .block-menu {
         display: block; }
-        .main-restaurant .section-menu article .block-menu .menu {
+        .main-restaurant .article-menu section .block-menu .menu {
           width: auto;
           box-shadow: 0 0 10px #a6a6a6; }
   .main-restaurant .block-btn-commander {
