@@ -18,8 +18,11 @@ ul {
 
 /* Couleurs */
 /* Paddings */
+/* Valeur d'éclaircissement des couleurs */
 /* mixin */
 /* Foncer la couleur des label "nouveau" pour les restaurants */
+/* Survol des boutons */
+/* Survol des boutons de fonctionnement */
 header {
   margin-bottom: 6px;
   padding: 10px;
@@ -78,41 +81,47 @@ h2 {
 header {
   border-radius: 0 0 15px 15px; }
 
-section .presentation-site {
-  width: 95%;
-  margin: auto;
-  padding-bottom: 45px;
-  background-color: #f2f2f2;
-  text-align: center;
-  color: black;
-  /* Bouton explorer */ }
-  section .presentation-site form {
-    padding: 10px;
-    background-color: #e6e6e6;
-    display: flex;
-    justify-content: center; }
-    section .presentation-site form button {
-      margin-right: 10px;
+.intro-site {
+  width: 100%; }
+  .intro-site .presentation-site {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 45px;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: black;
+    /* Bouton explorer */ }
+    .intro-site .presentation-site form {
+      padding: 10px;
       background-color: #e6e6e6;
-      border: none; }
-    section .presentation-site form input {
-      background-color: #e6e6e6;
+      display: flex;
+      justify-content: center; }
+      .intro-site .presentation-site form button {
+        margin-right: 10px;
+        background-color: #e6e6e6;
+        border: none; }
+      .intro-site .presentation-site form input {
+        background-color: #e6e6e6;
+        border: none;
+        width: 125px;
+        font-weight: 500; }
+    .intro-site .presentation-site p {
+      color: #4d4d4d; }
+    .intro-site .presentation-site .presentation-site__intro {
+      margin: 25px 0 15px 0; }
+    .intro-site .presentation-site .presentation-site__btn-ancre-restau {
+      background: linear-gradient(to bottom, #ff79da, #9356dc);
+      box-shadow: 0 0 10px #a6a6a6;
+      margin: 20px 0 0px 0;
+      padding: 10px 30px;
       border: none;
-      width: 125px;
-      font-weight: 500; }
-  section .presentation-site p {
-    color: #4d4d4d; }
-  section .presentation-site .presentation-site__intro {
-    margin: 25px 0 15px 0; }
-  section .presentation-site .presentation-site__btn-ancre-restau {
-    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
-    margin: 20px 0 0px 0;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 25px; }
-    section .presentation-site .presentation-site__btn-ancre-restau a {
-      color: white;
-      font-weight: 500; }
+      border-radius: 25px; }
+      .intro-site .presentation-site .presentation-site__btn-ancre-restau a {
+        color: white;
+        font-weight: 500; }
+      .intro-site .presentation-site .presentation-site__btn-ancre-restau:hover {
+        background: linear-gradient(to bottom, #ff93e1, #a16be0);
+        box-shadow: 0 0 10px #404040; }
 
 /* Partie fonctionnement du site */
 .fonctionnement-site {
@@ -132,6 +141,13 @@ section .presentation-site {
       display: flex;
       justify-content: flex-start;
       align-items: center; }
+      .fonctionnement-site .fonctionnement-container .etape-commande:hover {
+        background-color: #f2eafb; }
+      .fonctionnement-site .fonctionnement-container .etape-commande:hover .picto-etape {
+        background: #9356dc;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; }
       .fonctionnement-site .fonctionnement-container .etape-commande .num-etape {
         width: 1.2em;
         height: 1.2em;
@@ -290,7 +306,8 @@ h1 {
         background-color: white;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end; }
+        align-items: flex-end;
+        overflow: hidden; }
         .article-menu section .block-menu .menu .desc-plat {
           width: 75%; }
           .article-menu section .block-menu .menu .desc-plat h3 {
@@ -305,15 +322,17 @@ h1 {
           width: 60px;
           height: 60px;
           background-color: #99e2d0;
-          display: none;
+          display: flex;
           justify-content: center;
           align-items: center;
           margin: 0 -72px -10px 10px;
-          overflow: hidden;
           border-radius: 0 15px 15px 0; }
           .article-menu section .block-menu .menu .commande .fa-check-circle {
             color: white;
             background-clip: text; }
+        .article-menu section .block-menu .menu:hover .commande {
+          margin: 0 -10px -10px 10px;
+          transition: margin-right 1s; }
 
 /* Smartphone */
 @media all and (max-width: 768px) {
@@ -356,5 +375,8 @@ h1 {
   border-radius: 25px;
   color: white;
   font-weight: 500; }
+  .btn-commander:hover {
+    background: linear-gradient(to bottom, #ff93e1, #a16be0);
+    box-shadow: 0 0 10px #404040; }
 
 /*# sourceMappingURL=style.css.map */

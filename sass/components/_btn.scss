@@ -6,4 +6,7 @@
     border-radius: 25px;
     color: white;
     font-weight: 500;
+    &:hover {
+        @include survol-btn;
+    }
 }

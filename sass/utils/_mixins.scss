@@ -7,3 +7,18 @@
 @mixin label-nouveau($couleur: fonc-label($couleur-tertiaire)){
     color: $couleur;
 }
+
+/* Survol des boutons */
+@mixin survol-btn($clr1:$couleur-primaire, $clr2:$couleur-secondaire, $clr3:$couleur-ombre){
+    $clr-primaire-clair: lighten($clr1, 5%);
+    $clr-secondaire-clair: lighten($clr2, 5%);
+    $clr-ombre-foncee: darken($clr3, 40%);
+    background: linear-gradient(to bottom, $clr-secondaire-clair, $clr-primaire-clair);
+    box-shadow: 0 0 10px $clr-ombre-foncee;
+}
+
+/* Survol des boutons de fonctionnement */
+@mixin survol-fonctionnement($clr-survol:$couleur-primaire) {
+    background-color: lighten($clr-survol, 35%);
+    
+}

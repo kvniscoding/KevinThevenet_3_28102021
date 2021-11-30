@@ -12,50 +12,55 @@ header {
     border-radius: 0 0 15px 15px;
 }
 
-section {
-    & .presentation-site {  
-        width: 95%;
-        margin: auto;
-        padding-bottom: 45px;
-        background-color: $couleur-gris-clair;
-        text-align: center;
-        color: black;
-        & form {
-            padding: 10px;
-            background-color: $couleur-form;
-            display: flex;
-            justify-content: center;
-            & button {
-                margin-right: 10px;
+.intro-site {
+        width: 100%;
+        & .presentation-site {  
+            width: 95%;
+            margin: auto;
+            padding-bottom: 45px;
+            background-color: $couleur-gris-clair;
+            text-align: center;
+            color: black;
+            & form {
+                padding: 10px;
                 background-color: $couleur-form;
+                display: flex;
+                justify-content: center;
+                & button {
+                    margin-right: 10px;
+                    background-color: $couleur-form;
+                    border: none;
+                }
+                & input {
+                    background-color: $couleur-form;
+                    border: none;
+                    width: 125px;
+                    font-weight: 500;
+                }
+            }
+            & p {
+                color: $couleur-police-intro;
+            }
+            .presentation-site__intro {
+                margin: 25px 0 15px 0;
+            }
+            /* Bouton explorer */
+            & .presentation-site__btn-ancre-restau {
+                background: linear-gradient(to bottom, $couleur-secondaire, $couleur-primaire);
+                box-shadow: 0 0 10px $couleur-ombre;
+                margin: 20px 0 0px 0;
+                padding: 10px 30px;
                 border: none;
-            }
-            & input {
-                background-color: $couleur-form;
-                border: none;
-                width: 125px;
-                font-weight: 500;
-            }
-        }
-        & p {
-            color: $couleur-police-intro;
-        }
-        .presentation-site__intro {
-            margin: 25px 0 15px 0;
-        }
-        /* Bouton explorer */
-        & .presentation-site__btn-ancre-restau {
-            background-image: linear-gradient(to bottom, $couleur-secondaire, $couleur-primaire);
-            margin: 20px 0 0px 0;
-            padding: 10px 30px;
-            border: none;
-            border-radius: 25px;
-            & a {
-                color: white;
-                font-weight: 500;
+                border-radius: 25px;
+                & a {
+                    color: white;
+                    font-weight: 500;
+                }
+                &:hover {
+                    @include survol-btn;
+                }
             }
         }
-    }
 }
 
 /* Partie fonctionnement du site */
@@ -76,6 +81,15 @@ section {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            &:hover {
+                @include survol-fonctionnement;
+            }
+            &:hover .picto-etape {
+                background: $couleur-primaire;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
             & .num-etape {
                 width: 1.2em;
                 height: 1.2em;

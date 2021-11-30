@@ -73,6 +73,7 @@ h1 {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
+                overflow: hidden;
                 & .desc-plat {
                     width: 75%;
                     & h3 {
@@ -90,16 +91,19 @@ h1 {
                     width: 60px;
                     height: 60px;
                     background-color: $couleur-tertiaire;
-                    display: none;
+                    display: flex;
                     justify-content: center;
                     align-items: center;
                     margin: 0 -72px -10px 10px;
-                    overflow: hidden;
                     border-radius: 0 15px 15px 0;
                     & .fa-check-circle {
                         color: white;
                         background-clip: text;
                     }
+                }
+                &:hover .commande {
+                    margin: 0 -10px -10px 10px;
+                    transition: margin-right 1s;
                 }
             }
         }
