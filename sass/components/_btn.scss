@@ -8,5 +8,6 @@
     font-weight: 500;
     &:hover {
         @include survol-btn;
+        cursor: pointer;
     }
 }

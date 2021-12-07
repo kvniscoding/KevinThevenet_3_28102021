@@ -46,9 +46,10 @@ header {
             }
             /* Bouton explorer */
             & .presentation-site__btn-ancre-restau {
+                width: 200px;
                 background: linear-gradient(to bottom, $couleur-secondaire, $couleur-primaire);
                 box-shadow: 0 0 10px $couleur-ombre;
-                margin: 20px 0 0px 0;
+                margin: 20px auto 0 auto;
                 padding: 10px 30px;
                 border: none;
                 border-radius: 25px;
@@ -83,6 +84,7 @@ header {
             align-items: center;
             &:hover {
                 @include survol-fonctionnement;
+                cursor: pointer;
             }
             &:hover .picto-etape {
                 background: $couleur-primaire;
@@ -158,12 +160,8 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .coeur-like {
-                & .coeur-like--plein {
-                    display: none;
-                }
-            }
         }
+        
     }
 }
 
