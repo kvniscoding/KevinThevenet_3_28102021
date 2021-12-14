@@ -19,3 +19,22 @@
         transform: translateY(0%);
     }
 }
+
+@keyframes spinner {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+
+@keyframes contenudusite {
+    0%,99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        z-index: 1;
+    }
+}

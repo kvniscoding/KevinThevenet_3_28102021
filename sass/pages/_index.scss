@@ -1,3 +1,37 @@
+/* loading-spinner */
+.spin {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 5px white;
+    background: linear-gradient($couleur-primaire, $couleur-secondaire, $couleur-tertiaire);
+    content: "";
+    animation: 3s linear infinite spinner;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+.spin::before {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: transparent 85px;
+    background: white;
+    content: "";
+    animation: 3s linear infinite spinner;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+
+.page-container {
+    animation: contenudusite 3s;
+}
+
 /* Refactorisation */
 .presentation-site__intro p, .fonctionnement-site__nom-section, h1 {
     font-size: 1.2em;
