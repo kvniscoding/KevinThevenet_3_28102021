@@ -2,4 +2,28 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: solid 5px white;
+    background: linear-gradient($couleur-primaire, $couleur-secondaire, $couleur-tertiaire);
+    content: "";
+    animation: 3s linear 1 spinner;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+
+.spin::before {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: transparent 85px;
+    background: white;
+    content: "";
+    animation: 3s linear 1 spinner;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
 }
