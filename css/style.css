@@ -407,7 +407,7 @@ h1 {
   width: 30%;
   height: 40px;
   margin-top: 10px;
-  padding: 10px;
+  padding: 10px 0;
   border-radius: 15px;
   background-color: white;
   display: flex;
@@ -415,19 +415,13 @@ h1 {
   overflow: hidden;
   cursor: pointer;
   animation: translationX 2s;
-  /*&:hover .desc-plat__tarif {
-      margin: 0 -75px 0 0;
-      transition: margin 1s;
-  }
-  &:hover .fa-check-circle {
-      transform: rotate(0deg);
-      transition: transform 0s;
-  }*/
 }
 .article-menu section .block-menu .menu .desc-plat {
-  width: 75%;
+  width: 95%;
   overflow: hidden;
-  margin-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 10px;
 }
 .article-menu section .block-menu .menu .desc-plat h3 {
   font-weight: 500;
@@ -438,7 +432,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  transition: margin-right 500ms;
+  margin: 0 15px 0 0;
 }
 .article-menu section .block-menu .menu .commande {
   width: 60px;
@@ -448,12 +442,25 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 0 15px 15px 0;
+  margin-right: -60px;
+  transition: margin 500ms;
 }
 .article-menu section .block-menu .menu .commande .fa-check-circle {
   color: white;
   background-clip: text;
   transform: rotate(-180deg);
   transition: transform 500ms;
+}
+.article-menu section .block-menu .menu:hover .desc-plat__tarif {
+  margin: 0 15px 0 0;
+  transition: margin 1s;
+}
+.article-menu section .block-menu .menu:hover .commande {
+  margin-right: 0;
+}
+.article-menu section .block-menu .menu:hover .fa-check-circle {
+  transform: rotate(0deg);
+  transition: transform 0s;
 }
 
 /* Smartphone */
@@ -486,6 +493,17 @@ h1 {
     width: auto;
     box-shadow: 0 0 10px #a6a6a6;
     animation: translationY 1s;
+  }
+  .main-restaurant .article-menu section .block-menu .menu:hover .desc-plat__tarif {
+    margin: 0 15px 0 0;
+    transition: margin 1s;
+  }
+  .main-restaurant .article-menu section .block-menu .menu:hover .commande {
+    margin-right: 0;
+  }
+  .main-restaurant .article-menu section .block-menu .menu:hover .fa-check-circle {
+    transform: rotate(0deg);
+    transition: transform 0s;
   }
   .main-restaurant .block-btn-commander {
     width: 100%;

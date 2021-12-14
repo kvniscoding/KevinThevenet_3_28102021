@@ -67,7 +67,7 @@ h1 {
                 width: 30%;
                 height: 40px;
                 margin-top: 10px;
-                padding: 10px;
+                padding: 10px 0;
                 border-radius: 15px;
                 background-color: white;
                 display: flex;
@@ -76,9 +76,11 @@ h1 {
                 cursor: pointer;
                 animation: translationX 2s;
                 & .desc-plat {
-                    width: 75%;
+                    width: 95%;
                     overflow: hidden;
-                    margin-right: 10px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin: 0 10px;
                     & h3 {
                         font-weight: 500;
                     }
@@ -89,7 +91,7 @@ h1 {
                     display: flex;
                     justify-content: center;
                     align-items: flex-end;
-                    transition: margin-right 500ms;
+                    margin: 0 15px 0 0;
                 }
                 & .commande {
                     width: 60px;
@@ -99,6 +101,8 @@ h1 {
                     justify-content: center;
                     align-items: center;
                     border-radius: 0 15px 15px 0;
+                    margin-right: -60px;
+                    transition: margin 500ms;
                     & .fa-check-circle {
                         color: white;
                         background-clip: text;
@@ -107,14 +111,17 @@ h1 {
                     }
                 }
                 
-                /*&:hover .desc-plat__tarif {
-                    margin: 0 -75px 0 0;
+                &:hover .desc-plat__tarif {
+                    margin: 0 15px 0 0;
                     transition: margin 1s;
+                }
+                &:hover .commande {
+                    margin-right: 0;
                 }
                 &:hover .fa-check-circle {
                     transform: rotate(0deg);
                     transition: transform 0s;
-                }*/
+                }
             }
         }
     }
@@ -148,6 +155,18 @@ h1 {
                         width: auto;
                         box-shadow: 0 0 10px $couleur-ombre;
                         animation: translationY 1s;
+
+                        &:hover .desc-plat__tarif {
+                            margin: 0 15px 0 0;
+                            transition: margin 1s;
+                        }
+                        &:hover .commande {
+                            margin-right: 0;
+                        }
+                        &:hover .fa-check-circle {
+                            transform: rotate(0deg);
+                            transition: transform 0s;
+                        }
                     }
                 }
             }
