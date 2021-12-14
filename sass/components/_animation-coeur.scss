@@ -1,12 +1,10 @@
-.coeur-like--plein {
-    opacity: 0;
-    &:hover {
-        opacity: 1;
-        transition: opacity 500ms;
-    }
-}
-
 .coeur-like--vide {
     position: relative;
     left: 1.2em;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 500ms;
+    &:hover {
+        opacity: 0;
     }
+}
