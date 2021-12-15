@@ -1,4 +1,4 @@
-.coeur-like--vide {
+.coeur-like--vide-blanc {
     position: relative;
     left: 1.2em;
     background-color: white;
@@ -6,5 +6,18 @@
     transition: opacity 500ms;
     &:hover {
         opacity: 0;
+        cursor: pointer;
+    }
+}
+
+.coeur-like--vide-gris-clair {
+    position: relative;
+    left: 1.2em;
+    background-color: $couleur-gris-clair;
+    opacity: 1;
+    transition: opacity 500ms;
+    &:hover {
+        opacity: 0;
+        cursor: pointer;
     }
 }
